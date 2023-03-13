@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongo Tom's Badass Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .btn {
+      background-color: red;
+      border-color: red;
+      border-radius: 5rem;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Mongo Tom's Badass Website</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3 text-center">
+        <p>This website is the shit, and so is Mongo Tom. Check back often for updates on my latest badass projects.</p>
+        <button type="button" class="btn btn-lg" onclick="changeColor()">Click me, Bitch</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XvoWrLJUkQnNat6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script>
+    function changeColor() {
+      var color = '#' + Math.floor(Math.random()*16777215).toString(16); // generate a random hex color
+      document.body.style.backgroundColor = color; // set the background color of the page
+    }
+  </script>
+
+</body>
+</html>
